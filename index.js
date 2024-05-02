@@ -233,6 +233,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
     resultsScreen.textContent = '';
     displayController.reset();
-    ;
+  });
+
+  const nameButton = document.querySelector('.name-container label');
+  const nameInput = document.querySelector('.name-container input');
+  nameButton.addEventListener('click', () => {
+    displayController.registerName(nameInput.value);
+  });
+  nameInput.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      displayController.registerName(nameInput.value);
+    }
   });
 });
