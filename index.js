@@ -5,4 +5,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     return {board};
   })();
+
+  function createPlayer(xOrO) {
+    return {xOrO};
+  }
 });
