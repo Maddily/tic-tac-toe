@@ -225,4 +225,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     displayController.attachTileClickListener(gameInstance);
   });
+
+  const reset = document.querySelector('.start');
+
+  reset.addEventListener('click', () => {
+    const resultsScreen = document.querySelector('.results p');
+
+    resultsScreen.textContent = '';
+    displayController.reset();
+    ;
+  });
 });
