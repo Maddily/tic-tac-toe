@@ -219,4 +219,10 @@ document.addEventListener('DOMContentLoaded', () => {
   })();
 
   displayController.renderBoard();
+
+  displayController.selectXOrO((playerChoice) => {
+    const gameInstance = game(createPlayer(playerChoice));
+
+    displayController.attachTileClickListener(gameInstance);
+  });
 });
