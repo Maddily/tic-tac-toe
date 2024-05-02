@@ -99,7 +99,6 @@ document.addEventListener('DOMContentLoaded', () => {
           } else {
             resultsScreen.textContent = "You win!";
           }
-          playerScore++;
           strikeThrough();
           over = 1;
         } else if (winnerOrTie === gameInstance.getComputer()) {
@@ -108,7 +107,6 @@ document.addEventListener('DOMContentLoaded', () => {
           } else {
             resultsScreen.textContent = "You lose!";
           }
-          computerScore++;
           strikeThrough();
           over = 1;
         } else if (winnerOrTie === 'tie') {
@@ -123,7 +121,6 @@ document.addEventListener('DOMContentLoaded', () => {
             } else {
               resultsScreen.textContent = "You win!";
             }
-            playerScore++;
             strikeThrough();
             over = 1;
           } else if (winnerOrTie === gameInstance.getComputer()) {
@@ -132,7 +129,6 @@ document.addEventListener('DOMContentLoaded', () => {
             } else {
               resultsScreen.textContent = "You lose!";
             }
-            computerScore++;
             strikeThrough();
             over = 1;
           } else if (winnerOrTie === 'tie') {
